@@ -29,16 +29,29 @@ The dataset contains hourly energy demand data with:
 
 energy-demand-forecast-pjm/
 │
-├── data/
-│ ├── raw/ # Original dataset (not pushed to GitHub)
-│ └── processed/ # Cleaned dataset
-│
-├── notebooks/ # Jupyter notebooks
-├── models/ # Trained models
-├── dashboard/ # Visualization / BI assets
-├── reports/ # Final analysis reports
+├── README.md                  ← recruiter lands here first
 ├── requirements.txt
-└── README.md
+│
+├── data/
+│   ├── raw/                   ← .gitignore the actual CSVs (too large)
+│   └── processed/             ← .gitignore parquet files
+│
+├── notebooks/
+│   ├── 01_data_loading.ipynb
+│   ├── 02_preprocessing.ipynb
+│   ├── 03_eda.ipynb
+│   └── 04_modeling.ipynb
+│
+├── models/
+│   ├── prophet_model.pkl
+│   └── xgboost_model.json
+│
+├── dashboard/
+│   └── pjm_dashboard.pdf      ← export from Power BI
+│
+└── reports/
+    ├── figures/               ← the 8 PNGs from notebooks
+    └── model_comparison.csv
 
 
 ---
