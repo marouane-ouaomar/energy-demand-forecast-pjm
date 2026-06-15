@@ -29,12 +29,12 @@ The dataset contains hourly energy demand data with:
 
 energy-demand-forecast-pjm/
 │
-├── README.md                  ← recruiter lands here first
+├── README.md                 
 ├── requirements.txt
 │
 ├── data/
-│   ├── raw/                   ← .gitignore the actual CSVs (too large)
-│   └── processed/             ← .gitignore parquet files
+│   ├── raw/                  
+│   └── processed/            
 │
 ├── notebooks/
 │   ├── 01_data_loading.ipynb
@@ -47,10 +47,10 @@ energy-demand-forecast-pjm/
 │   └── xgboost_model.json
 │
 ├── dashboard/
-│   └── pjm_dashboard.pdf      ← export from Power BI
+│   └── pjm_dashboard.pdf     
 │
 └── reports/
-    ├── figures/               ← the 8 PNGs from notebooks
+    ├── figures/              
     └── model_comparison.csv
 
 
